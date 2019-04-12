@@ -11,7 +11,7 @@ flags = {
     'passingTight94XV2' : '(passingTight94XV2 == 1)',
     'passingHEEP'   : '(passingHEEP == 1)',
     }
-baseOutDir = 'results/Val/'
+baseOutDir = 'results/Val/2017/'
 
 #############################################################
 ########## samples definition  - preparing the samples
@@ -22,10 +22,10 @@ import etc.inputs.tnpSampleDef as tnpSamples
 tnpTreeDir = 'tnpEleIDs'
 
 samplesDef = {
-    'data'   : tnpSamples.Temp2017Sample['Temp2017DATA'].clone(),
-    'mcNom'  : tnpSamples.Temp2017Sample['Temp2017MC1'].clone(),
-    'mcAlt'  : tnpSamples.Temp2017Sample['Temp2017MC2'].clone(),
-    'tagSel' : tnpSamples.Temp2017Sample['Temp2017MC3'].clone(),
+    'data'   : tnpSamples.TempSamples['Temp2017DATA'].clone(),
+    'mcNom'  : tnpSamples.TempSamples['Temp2017MC1'].clone(),
+    'mcAlt'  : tnpSamples.TempSamples['Temp2017MC2'].clone(),
+    'tagSel' : tnpSamples.TempSamples['Temp2017MC3'].clone(),
 }
 ## can add data sample easily
 #samplesDef['data'].add_sample( tnpSamples.ICHEP2016['data_2016_runC_ele'] )
@@ -53,7 +53,7 @@ if not samplesDef['tagSel'] is None: samplesDef['tagSel'].set_weight(weightName)
 ########## bining definition  [can be nD bining]
 #############################################################
 biningDef = [
-   { 'var' : 'el_sc_eta' , 'type': 'float', 'bins': [0.0, 1.4442, 1.566, 2.5] },
+   { 'var' : 'el_sc_eta' , 'type': 'float', 'bins': [-2.5, -1.566, -1.4442, 0.0, 1.4442, 1.566, 2.5] },
    { 'var' : 'el_pt' , 'type': 'float', 'bins': [35., 50, 100, 200, 500] },
 ]
 
