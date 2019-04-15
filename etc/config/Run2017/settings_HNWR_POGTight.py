@@ -22,10 +22,10 @@ import etc.inputs.tnpSampleDef as tnpSamples
 tnpTreeDir = 'tnpEleIDs'
 
 samplesDef = {
-    'data'   : tnpSamples.TempSamples['Temp2017DATA'].clone(),
-    'mcNom'  : tnpSamples.TempSamples['Temp2017MC1'].clone(),
-    'mcAlt'  : tnpSamples.TempSamples['Temp2017MC2'].clone(),
-    'tagSel' : tnpSamples.TempSamples['Temp2017MC3'].clone(),
+    'data'   : tnpSamples.MySamples['2017DATA'].clone(),
+    'mcNom'  : tnpSamples.MySamples['2017DYLO1'].clone(),
+    'mcAlt'  : tnpSamples.MySamples['2017DYNLO1'].clone(),
+    'tagSel' : tnpSamples.MySamples['2017DYLO2'].clone(),
 }
 ## can add data sample easily
 #samplesDef['data'].add_sample( tnpSamples.ICHEP2016['data_2016_runC_ele'] )
@@ -104,3 +104,14 @@ tnpParAltBkgFit = [
     "alphaF[0.,-5.,5.]",
     ]
         
+
+#### My Fit
+
+tnpParNomFit_MyFit = dict()
+tnpParNomFit_MyFit[0] = [
+    "meanP[-0.551, -0.6, -0.4]","sigmaP[2.212, 2.1, 2.3]",
+    "meanF[-0.445, -0.5, -0.4]","sigmaF[1.769, 1.6, 1.8]",
+    "acmsP[79.991., 78., 80.]","betaP[0.045, 0.03, 0.05]","gammaP[0.063, 0.05, 0.07]","peakP[90.0]",
+    "acmsF[50, 49, 51]","betaF[0.01, 0.005, 0.02]","gammaF[0.034, 0.02, 0.04]","peakF[90.0]",
+    ]
+

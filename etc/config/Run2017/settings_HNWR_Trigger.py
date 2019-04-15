@@ -20,10 +20,10 @@ import etc.inputs.tnpSampleDef as tnpSamples
 tnpTreeDir = 'tnpEleTrig'
 
 samplesDef = {
-    'data'   : tnpSamples.TempSamples['Temp2017DATA'].clone(),
-    'mcNom'  : tnpSamples.TempSamples['Temp2017MC1'].clone(),
-    'mcAlt'  : tnpSamples.TempSamples['Temp2017MC2'].clone(),
-    'tagSel' : tnpSamples.TempSamples['Temp2017MC3'].clone(),
+    'data'   : tnpSamples.MySamples['2017DATA'].clone(),
+    'mcNom'  : tnpSamples.MySamples['2017DYLO1'].clone(),
+    'mcAlt'  : tnpSamples.MySamples['2017DYNLO1'].clone(),
+    'tagSel' : tnpSamples.MySamples['2017DYLO2'].clone(),
 }
 ## can add data sample easily
 #samplesDef['data'].add_sample( tnpSamples.ICHEP2016['data_2016_runC_ele'] )

@@ -142,7 +142,7 @@ if  args.doFit:
             elif args.altBkg:
                 tnpRoot.histFitterAltBkg(  sampleToFit, tnpBins['bins'][ib], tnpConf.tnpParAltBkgFit )
             else:
-                tnpRoot.histFitterNominal( sampleToFit, tnpBins['bins'][ib], tnpConf.tnpParNomFit )
+                tnpRoot.histFitterNominal( sampleToFit, tnpBins['bins'][ib], tnpConf.tnpParNomFit_MyFit[ib] )
 
     args.doPlot = True
      
