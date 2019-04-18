@@ -34,5 +34,32 @@ Data2018_102X = {
 
 ##about lumi: thse ntuples are done with /afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions18/13TeV/PromptReco/Cert_314472-321221_13TeV_PromptReco_Collisions18_JSON.txt = with recorded luminosity : 31.71 /fb but ~20% are crashed. Also we need to update the single runs lumi
 
+TempSamples = {
+    'Temp2017DATA' : tnpSample('Temp2017DATA', '/data9/Users/jskim/EGammaTnP/egm_tnp_analysis/testsamples/2017/TnPTree_data.root'),
+    'Temp2017MC1' : tnpSample('Temp2017MC1', '/data9/Users/jskim/EGammaTnP/egm_tnp_analysis/testsamples/2017/TnPTree_mc.root', isMC = True),
+    'Temp2017MC2' : tnpSample('Temp2017MC2', '/data9/Users/jskim/EGammaTnP/egm_tnp_analysis/testsamples/2017/TnPTree_mc.root', isMC = True),
+    'Temp2017MC3' : tnpSample('Temp2017MC3', '/data9/Users/jskim/EGammaTnP/egm_tnp_analysis/testsamples/2017/TnPTree_mc.root', isMC = True),
+}
 
- 
+MySamples = {
+
+    '2016DATA' : tnpSample('2016DATA', '/data9/Users/jskim/EGammaTnP/DATA/2016/2016_DATA.root'),
+    '2016DYLO1' : tnpSample('2016DYLO1', '/data9/Users/jskim/EGammaTnP/DATA/2016/2016_DY_madgraphMLM.root', isMC = True),
+    '2016DYLO2' : tnpSample('2016DYLO2', '/data9/Users/jskim/EGammaTnP/DATA/2016/2016_DY_madgraphMLM.root', isMC = True),
+    '2016DYLO3' : tnpSample('2016DYLO3', '/data9/Users/jskim/EGammaTnP/DATA/2016/2016_DY_madgraphMLM.root', isMC = True),
+    '2016DYNLO1' : tnpSample('2016DYNLO1', '/data9/Users/jskim/EGammaTnP/DATA/2016/2016_DY_amcatnloFXFX.root', isMC = True),
+    '2016DYNLO2' : tnpSample('2016DYNLO2', '/data9/Users/jskim/EGammaTnP/DATA/2016/2016_DY_amcatnloFXFX.root', isMC = True),
+    '2016DYNLO3' : tnpSample('2016DYNLO3', '/data9/Users/jskim/EGammaTnP/DATA/2016/2016_DY_amcatnloFXFX.root', isMC = True),
+
+    '2017DATA' : tnpSample('2017DATA', '/data9/Users/jskim/EGammaTnP/DATA/2017/2017_DATA.root'),
+    '2017DYLO1' : tnpSample('2017DYLO1', '/data9/Users/jskim/EGammaTnP/DATA/2017/2017_DY_madgraphMLM.root', isMC = True),
+    '2017DYLO2' : tnpSample('2017DYLO2', '/data9/Users/jskim/EGammaTnP/DATA/2017/2017_DY_madgraphMLM.root', isMC = True),
+    '2017DYLO3' : tnpSample('2017DYLO3', '/data9/Users/jskim/EGammaTnP/DATA/2017/2017_DY_madgraphMLM.root', isMC = True),
+    '2017DYNLO1' : tnpSample('2017DYNLO1', '/data9/Users/jskim/EGammaTnP/DATA/2017/2017_DY_amcatnloFXFX.root', isMC = True),
+    '2017DYNLO2' : tnpSample('2017DYNLO2', '/data9/Users/jskim/EGammaTnP/DATA/2017/2017_DY_amcatnloFXFX.root', isMC = True),
+    '2017DYNLO3' : tnpSample('2017DYNLO3', '/data9/Users/jskim/EGammaTnP/DATA/2017/2017_DY_amcatnloFXFX.root', isMC = True),
+
+}
+
+
+

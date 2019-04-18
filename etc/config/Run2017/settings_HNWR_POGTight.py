@@ -108,10 +108,3 @@ tnpParAltBkgFit = [
 #### My Fit
 
 tnpParNomFit_MyFit = dict()
-tnpParNomFit_MyFit[0] = [
-    "meanP[-0.551, -0.6, -0.4]","sigmaP[2.212, 2.1, 2.3]",
-    "meanF[-0.445, -0.5, -0.4]","sigmaF[1.769, 1.6, 1.8]",
-    "acmsP[79.991., 78., 80.]","betaP[0.045, 0.03, 0.05]","gammaP[0.063, 0.05, 0.07]","peakP[90.0]",
-    "acmsF[50, 49, 51]","betaF[0.01, 0.005, 0.02]","gammaF[0.034, 0.02, 0.04]","peakF[90.0]",
-    ]
-
